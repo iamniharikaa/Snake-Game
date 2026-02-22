@@ -36,3 +36,8 @@ button:hover {
   background: #0ea5e9;
 
 }
+@media (max-width: 768px) {
+  .controls {
+    display: none;
+  }
+}

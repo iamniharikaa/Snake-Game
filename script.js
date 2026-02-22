@@ -162,4 +162,15 @@ document.getElementById("startBtn").addEventListener("click", startGame);
 document.getElementById("pauseBtn").addEventListener("click", pauseGame);
 document.getElementById("resumeBtn").addEventListener("click", resumeGame);
 document.getElementById("endBtn").addEventListener("click", endGame);
+// ===== MOBILE CONTROLS =====
+function simulateKey(key) {
+  document.dispatchEvent(
+    new KeyboardEvent("keydown", { key })
+  );
+}
+
+document.getElementById("upBtn")?.addEventListener("click", () => simulateKey("ArrowUp"));
+document.getElementById("downBtn")?.addEventListener("click", () => simulateKey("ArrowDown"));
+document.getElementById("leftBtn")?.addEventListener("click", () => simulateKey("ArrowLeft"));
+document.getElementById("rightBtn")?.addEventListener("click", () => simulateKey("ArrowRight"));
 
