@@ -1,0 +1,35 @@
+body {
+  background: #020617;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  background: #0f172a;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+h1 {
+  margin-top: 20px;
+}
+.controls {
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #38bdf8;
+  color: #020617;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
