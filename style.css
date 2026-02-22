@@ -1,0 +1,77 @@
+body {
+  background: #020617;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  background: #0f172a;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+.controls {
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #38bdf8;
+  color: #020617;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* Mobile buttons */
+.mobile-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-buttons div {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-buttons button {
+  padding: 18px 22px;
+  margin: 6px;
+  border: none;
+  border-radius: 10px;
+  background: #4ade80;
+  color: #020617;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-buttons button:active {
+   background: #22c55e;
+}
+
+@media (max-width: 480px) {
+  .mobile-buttons button {
+    padding: 20px 25px;
+    font-size: 24px;
+  }
+}
+/* Hide mobile buttons on desktop */
+@media (min-width: 769px) {
+  .mobile-buttons {
+    display: none;
+  }
+}
+.mobile-buttons {
+  display: block !important;
+  border: 2px solid red;
+}
