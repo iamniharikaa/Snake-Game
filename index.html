@@ -1,68 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snake Game</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-  .mobile-buttons {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-  }
-
-  .mobile-buttons div {
-    display: flex;
-    justify-content: center;
-  }
-
-  .mobile-buttons button {
-    padding: 18px 22px;
-    margin: 6px;
-    border: none;
-    border-radius: 10px;
-    background: #4ade80;
-    color: #020617;
-    font-size: 22px;
-  }
-</style>
 </head>
-
 <body>
 
   <h1>🐍 Snake Game</h1>
-
   <canvas id="game" width="400" height="400"></canvas>
-
-  <!-- Desktop Controls -->
   <div class="controls">
-    <button id="startBtn">Start</button>
-    <button id="pauseBtn">Pause</button>
-    <button id="resumeBtn">Resume</button>
-    <button id="endBtn">End</button>
-  </div>
-
-  <!-- Mobile Direction Buttons -->
-  <div class="mobile-buttons">
-    <div>
-      <button id="upBtn">↑</button>
-    </div>
-    <div>
-      <button id="leftBtn">←</button>
-      <button id="downBtn">↓</button>
-      <button id="rightBtn">→</button>
-    </div>
-  </div>
-
+  <button id="startBtn">Start</button>
+  <button id="pauseBtn">Pause</button>
+  <button id="resumeBtn">Resume</button>
+  <button id="endBtn">End</button>
+</div>
   <p>Score: <span id="score">0</span></p>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

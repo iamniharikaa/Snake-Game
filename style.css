@@ -1,3 +1,5 @@
+
+
 body {
   background: #020617;
   color: white;
@@ -12,6 +14,9 @@ canvas {
   box-shadow: 0 0 20px #38bdf8;
 }
 
+h1 {
+  margin-top: 20px;
+}
 .controls {
   margin-top: 15px;
 }
@@ -29,49 +34,5 @@ button {
 
 button:hover {
   background: #0ea5e9;
-}
 
-/* Mobile buttons */
-.mobile-buttons {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mobile-buttons div {
-  display: flex;
-  justify-content: center;
-}
-
-.mobile-buttons button {
-  padding: 18px 22px;
-  margin: 6px;
-  border: none;
-  border-radius: 10px;
-  background: #4ade80;
-  color: #020617;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-.mobile-buttons button:active {
-   background: #22c55e;
-}
-
-@media (max-width: 480px) {
-  .mobile-buttons button {
-    padding: 20px 25px;
-    font-size: 24px;
-  }
-}
-/* Hide mobile buttons on desktop */
-@media (min-width: 769px) {
-  .mobile-buttons {
-    display: none;
-  }
-}
-.mobile-buttons {
-  display: block !important;
-  border: 2px solid red;
 }
