@@ -173,4 +173,15 @@ document.getElementById("upBtn")?.addEventListener("click", () => simulateKey("A
 document.getElementById("downBtn")?.addEventListener("click", () => simulateKey("ArrowDown"));
 document.getElementById("leftBtn")?.addEventListener("click", () => simulateKey("ArrowLeft"));
 document.getElementById("rightBtn")?.addEventListener("click", () => simulateKey("ArrowRight"));
+// ===== MOBILE CONTROLS =====
+function simulateKey(key) {
+  document.dispatchEvent(
+    new KeyboardEvent("keydown", { key })
+  );
+}
+
+document.getElementById("upBtn").onclick = () => simulateKey("ArrowUp");
+document.getElementById("downBtn").onclick = () => simulateKey("ArrowDown");
+document.getElementById("leftBtn").onclick = () => simulateKey("ArrowLeft");
+document.getElementById("rightBtn").onclick = () => simulateKey("ArrowRight");
 

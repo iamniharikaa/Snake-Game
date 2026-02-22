@@ -11,37 +11,26 @@
 
   <h1>🐍 Snake Game</h1>
 
-  <canvas id="game" width="400" height="400"></canvas>
+<canvas id="game" width="400" height="400"></canvas>
 
-  <!-- Mobile Buttons -->
-  <div class="mobile-buttons" style="
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 9999;
-  ">
-    <button id="upBtn" style="font-size:24px;padding:18px;">↑</button>
-    <div>
-      <button id="leftBtn" style="font-size:24px;padding:18px;">←</button>
-      <button id="downBtn" style="font-size:24px;padding:18px;">↓</button>
-      <button id="rightBtn" style="font-size:24px;padding:18px;">→</button>
-    </div>
+<!-- Game control buttons -->
+<div class="controls">
+  <button id="startBtn">Start</button>
+  <button id="pauseBtn">Pause</button>
+  <button id="resumeBtn">Resume</button>
+  <button id="endBtn">End</button>
+</div>
+
+<!-- Mobile direction buttons -->
+<div class="mobile-buttons">
+  <button id="upBtn">↑</button>
+  <div class="row">
+    <button id="leftBtn">←</button>
+    <button id="downBtn">↓</button>
+    <button id="rightBtn">→</button>
   </div>
+</div>
 
-  <!-- Desktop Controls -->
-  <div class="controls">
-    <button id="startBtn">Start</button>
-    <button id="pauseBtn">Pause</button>
-    <button id="resumeBtn">Resume</button>
-    <button id="endBtn">End</button>
-  </div>
-
-  <p>Score: <span id="score">0</span></p>
-
-  <script src="script.js"></script>
+<p>Score: <span id="score">0</span></p>
 </body>
 </html>

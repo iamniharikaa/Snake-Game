@@ -14,30 +14,53 @@ canvas {
   box-shadow: 0 0 20px #38bdf8;
 }
 
-h1 {
-  margin-top: 20px;
-}
+/* Game control buttons */
 .controls {
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-button {
-  padding: 8px 16px;
-  margin: 5px;
+.controls button {
+  padding: 10px 18px;
+  margin: 6px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   background: #38bdf8;
   color: #020617;
   font-size: 14px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #0ea5e9;
-
+/* Mobile arrow buttons */
+.mobile-buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media (max-width: 768px) {
-  .controls {
-    display: none;
+
+.mobile-buttons button {
+  padding: 18px 24px;
+  margin: 6px;
+  border: none;
+  border-radius: 10px;
+  background: #4ade80;
+  color: #020617;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-buttons .row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Improve spacing on phone */
+@media (max-width: 600px) {
+  canvas {
+    width: 90vw;
+    height: 90vw;
   }
 }
